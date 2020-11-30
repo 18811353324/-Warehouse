@@ -1,0 +1,15 @@
+# 服务器节点配置
+[service]
+port = ":8080"
+inner_token = "rpc bearer cdEger5i9943rFqewg"
+trace_type = "jaeger"
+trace_endpoint = "localhost:6831"
+trace_server_process = true
+
+# 日志配置
+[logger]
+level = "debug"
+
+[logger.extra]
+module = "测试微服务"
+env = "local"
